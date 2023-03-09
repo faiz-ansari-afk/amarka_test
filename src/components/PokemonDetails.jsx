@@ -37,7 +37,7 @@ function genSocialIcon(name, active) {
   }
 }
 const PokemonDetails = ({ data }) => {
-  console.log(data);
+//   console.log(data);
   return (
     <div
       className="bg-[#202636] grid grid-cols-12 gap-3 py-3 rounded-md my-5"

@@ -1,11 +1,11 @@
 import parse from 'html-react-parser';
 
 const Comments = ({ data }) => {
-  console.table(data);
+//   console.table(data);
   return (
     <div className="mx-3 flex flex-col mt-4 mb-12">
-      {data.map((d) => (
-        <div className="flex gap-2 mb-4 text-[12px]    ">
+      {data.map((d,index) => (
+        <div className="flex gap-2 mb-4 text-[12px]    " key={index}>
           <img src={d.avatar} alt={d.name} className="rounded-full w-10 h-10" />
           <div className="flex-grow bg-white rounded-md pl-3 py-2">
             <div className="flex">
